@@ -2,7 +2,7 @@
 
 **Projekt:** Saucedemo.com (Swag Labs E-commerce Demo Application)  
 **Verzia aplikácie:** N/A  
-**URL:** https://www.saucedemo.com  
+**URL:** https://www.saucedemo.com    
 **Autor / Tester:** Katarína Kyselová  
 **Obdobie testovania:** 18. august 2026 – 27. september 2026  
 **Testované prostredie:** Windows 11 | MS Edge v152.0 (64-bit), Google Chrome v152.0 (64-bit) | Rozlíšenie 1920x1080 px    
@@ -10,7 +10,7 @@
 
 ## 1. 🔎 Úvod a prehľad (Executive Summary)
 ### 1.1 Účel dokumentu
-Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky  www.saucedemo.com  
+Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky [SauceDemo](www.saucedemo.com)  
 
 Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testerom na učenie a zdokonaľovanie v QA testingu. Základný profil standard_user slúži ako referenčný účet, zatiaľ čo doplnkové profily visual_user, problem_user,error_user,  performance_glitch_user a locked_out_user obsahujú zámerne zapracované špecifické defekty.  
 
@@ -44,12 +44,18 @@ Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testero
 **Vykonaných TC:** 29  
 **Úspešné (Passed):** 20 (69 %)  
 **Zlyhané (Failed):** 9 (31 %)  
-**Zablokované (Blocked):** 0 (0 %) 
+**Zablokované (Blocked):** 0 (0 %)   
+
+<img width="1920" height="1080" alt="Saucedemo com (5)" src="https://github.com/user-attachments/assets/b38a21b9-3d27-4a1c-ad11-e4651d498a81" />
 
 Všetky uvedené metriky vychádzajú z vykonania 29 testovacích prípadov na referenčnom účte standard_user.   
 Modul **Prihlásenie (Login)** obsahoval testovacie prípady, ktoré mali pri testovaní 100% úspešnosť.   
-Naopak najviac zlyhaní (5) bolo zaznamenaných v module s najväčším počtom testovacích prípadov -** Katalóg produktov**. Boli to vizuálne nedostatky, nekonzistentnosť obsahu a nedostatočná perzistencia filtra.  Najviac defektov (4) sa v Katalógu produktov vzťahovalo **na tlačidlo a správanie filtra**.    
-Najväčšiu severitu mali bugy zistené v moduloch **Nákupný košík a Objednávka** (1xMajor) a **Správa relácií** (1xMajor). To naznačuje potrebu venovať týmto modulom zvýšenú pozornosť.  
+Naopak najviac zlyhaní (5) bolo zaznamenaných v module s najväčším počtom testovacích prípadov - **Katalóg produktov**. Boli to vizuálne nedostatky, nekonzistentnosť obsahu a nedostatočná perzistencia filtra.  Najviac defektov (4) sa v Katalógu produktov vzťahovalo **na tlačidlo a správanie filtra**.    
+Najväčšiu severitu mali bugy zistené v moduloch **Nákupný košík a Objednávka** (1xMajor) a **Správa relácií** (1xMajor). To naznačuje potrebu venovať týmto modulom zvýšenú pozornosť.    
+
+<img width="1920" height="1080" alt="Saucedemo com (1)" src="https://github.com/user-attachments/assets/8e6a71cd-2167-4dea-8ef2-15fb408ace20" />  
+
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/c9a3992b-7ac9-40af-8840-91d2effcd6f3" />
 
 ### 2.2 Súhrn prieskumného testovania (Exploratory Testing)
 **Počet vykonaných testovacích relácií (Sessions/Charters):** 2   
@@ -78,6 +84,9 @@ V rámci uvedených sessions boli evidované nasledovné 2 bugy:
 
   **BUG_Exploratory_II**   
 Záverečná fáza prieskumného testovania zaznamenala kriticky závažné správanie košíka, pri ktorom vznikla neviditeľná položka. Táto položka sa dala odstrániť Reset App State (nie je to štandardný používateľský spôsob).
+
+<img width="1920" height="1080" alt="Saucedemo com (7)" src="https://github.com/user-attachments/assets/1810f874-2063-4851-b570-fc7df9150810" />
+
 
 
 ## 5. 📝 Záver a odporúčania
@@ -109,7 +118,11 @@ Prioritne zapracovať podmienku na minimálny počet položiek v košíku pre pr
 Optimalizovať čas načítania stránky /inventory.html. Počas testovania bola ako orientačná referenčná hodnota použitá doba načítania do 3 sekúnd, pričom pri profile performance_glitch_user bol zaznamenaný výrazne dlhší čas načítania.  
 (3) **Oprava perzistencie filtrov:**  
 Zaistiť ukladanie stavu filtra tak, aby filter pretrval aj po obnovení stránky a návrate z detailu produktu.   
-(4) **Doplnenie validácie formulárov:** Zaviesť regex pravidlá na povinné polia (napr. overovanie formátu PSČ, mien a priezvisk).  
+(4) **Doplnenie validácie formulárov:** Zaviesť regex pravidlá na povinné polia (napr. overovanie formátu PSČ, mien a priezvisk).    
+
+
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/a0b39862-1f8b-4363-b56e-75756c665169" />
+
 
 
 
