@@ -117,18 +117,18 @@ SauceDemo je vynikajúcou didaktickou pomôckou na výučbu junior QA testerov:
 
 ### 5.2 Identifikované riziká (reálna produkčná aplikácia)
 
-**(1) Riziko finančnej straty a straty zákazníka (Zlá logika košíka):** Možnosť odoslať prázdnu objednávku (*BUG_Cart_03*) vytvára riziko zbytočných nákladov pri spracovaní   nulových objednávok. So vznikom neviditeľnej položky, ktorú nie je možné odstrániť štandardným tlačidlom Remove (*BUG_Exploratory_II*) sa vytvára kritické riziko, že zákazník košík aj e-shop opustí.  
+**(1) Riziko finančnej straty a straty zákazníka (Zlá logika košíka):** Možnosť odoslať prázdnu objednávku (*BUG_Cart_03*) vytvára riziko zbytočných nákladov pri spracovaní nulových objednávok. So vznikom neviditeľnej položky, ktorú nie je možné odstrániť štandardným tlačidlom `Remove` (*BUG_Exploratory_II*) sa vytvára kritické riziko, že zákazník košík aj e-shop opustí.  
 
 **(2) Bezpečnostné riziko (Ponechanie aktívnej relácie):** Ponechanie aktívnej relácie pri návrate tlačidlom *späť* v prehliadači (*BUG_Session_01*) vystavuje používateľa riziku neoprávneného prístupu k účtu.   
 
 **(3) Zhoršená používateľská skúsenosť (UX a výkon):** Strata nastaveného filtra pri prechode do detailu produktu alebo pri refreshi (*BUG_Filter_02, BUG_Filter_03*) a zhoršená výkonnostná efektivita načítania katalógu (*BUG_Exploratory_I*) negatívne ovplyvňuje používateľský zážitok.   
 
-**(4) Validácia vstupov:** Chýbajúca validácia formátu údajov v Checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries/PSČ, čo by viedlo k nedoručiteľným zásielkam.  
+**(4) Validácia vstupov:** Chýbajúca validácia formátu údajov v checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries/PSČ, čo by viedlo k nedoručiteľným zásielkam.  
 
 
 ### 5.3 Odporúčania pre ďalší vývoj / QA kroky (reálna produkčná aplikácia)
 
-**(1) Oprava biznis logiky & bezpečnosti:** Prioritne zapracovať podmienku na minimálny počet položiek v košíku pre prechod do Checkoutu, opraviť fungovanie košíka tak, aby v ňom neostali neviditeľné položky a zabezpečiť, aby sa prihlasovacia stránka nezobrazovala už prihlásenému používateľovi, keď klikne na šípku *späť* v prehliadači.   
+**(1) Oprava biznis logiky & bezpečnosti:** Prioritne zapracovať podmienku na minimálny počet položiek v košíku pre prechod do checkoutu, opraviť fungovanie košíka tak, aby v ňom neostali neviditeľné položky a zabezpečiť, aby sa prihlasovacia stránka nezobrazovala už prihlásenému používateľovi, keď klikne na šípku *späť* v prehliadači.   
 
 **(2) Optimalizácia výkonu a načítavania:** Optimalizovať čas načítania stránky `/inventory.html`. Počas testovania bola ako orientačná referenčná hodnota použitá doba načítania do 3 sekúnd, pričom pri profile `performance_glitch_user` bol zaznamenaný výrazne dlhší čas načítania.  
 
