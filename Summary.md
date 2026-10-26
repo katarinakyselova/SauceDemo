@@ -114,24 +114,27 @@ SauceDemo je vynikajúcou didaktickou pomôckou na výučbu junior QA testerov:
 * poskytuje priestor na praktickú aplikáciu techník testovania čiernej skrinky (najmä analýza hraničných hodnôt, negatívne testovanie) a prieskumného testovania  
 * najmä nezhody medzi obrázkami a popismi produktov by v reálnom e-shope boli defekty, v aplikácii *SauceDemo* sú z pohľadu výučby jedným z najzaujímavejších aspektov - podnecujú k ďalšiemu skúmaniu aplikácie, hľadaniu súvislostí a prirodzene rozvíjajú zvedavosť, pozornosť k detailom a testerské myslenie  
 
+
 ### 5.2 Identifikované riziká (reálna produkčná aplikácia)
-(1) **Riziko finančnej straty a straty zákazníka (Zlá logika košíka):**  
-Možnosť odoslať prázdnu objednávku (*BUG_Cart_03*) vytvára riziko zbytočných nákladov pri spracovaní nulových objednávok. So vznikom neviditeľnej položky, ktorú nie je možné odstrániť štandardným tlačidlom Remove (*BUG_Exploratory_II*) sa vytvára kritické riziko, že zákazník košík aj e-shop opustí.  
-(2) **Bezpečnostné riziko (Ponechanie aktívnej relácie):**  
-Ponechanie aktívnej relácie pri návrate tlačidlom *späť* v prehliadači (*BUG_Session_01*) vystavuje používateľa riziku neoprávneného prístupu k účtu.  
-(3) **Zhoršená používateľská skúsenosť (UX a výkon):**  
-Strata nastaveného filtra pri prechode do detailu produktu alebo pri refreshi (*BUG_Filter_02, BUG_Filter_03*) a zhoršená výkonnostná efektivita načítania katalógu (*BUG_Exploratory_I*) negatívne ovplyvňuje používateľský zážitok.  
-(4) **Validácia vstupov:**  
-Chýbajúca validácia formátu údajov v Checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries/PSČ, čo by viedlo k nedoručiteľným zásielkam.  
+
+**(1) Riziko finančnej straty a straty zákazníka (Zlá logika košíka):** Možnosť odoslať prázdnu objednávku (*BUG_Cart_03*) vytvára riziko zbytočných nákladov pri spracovaní   nulových objednávok. So vznikom neviditeľnej položky, ktorú nie je možné odstrániť štandardným tlačidlom Remove (*BUG_Exploratory_II*) sa vytvára kritické riziko, že zákazník košík aj e-shop opustí.  
+
+**(2) Bezpečnostné riziko (Ponechanie aktívnej relácie):** Ponechanie aktívnej relácie pri návrate tlačidlom *späť* v prehliadači (*BUG_Session_01*) vystavuje používateľa riziku neoprávneného prístupu k účtu.   
+
+**(3) Zhoršená používateľská skúsenosť (UX a výkon):** Strata nastaveného filtra pri prechode do detailu produktu alebo pri refreshi (*BUG_Filter_02, BUG_Filter_03*) a zhoršená výkonnostná efektivita načítania katalógu (*BUG_Exploratory_I*) negatívne ovplyvňuje používateľský zážitok.   
+
+**(4) Validácia vstupov:** Chýbajúca validácia formátu údajov v Checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries/PSČ, čo by viedlo k nedoručiteľným zásielkam.  
+
 
 ### 5.3 Odporúčania pre ďalší vývoj / QA kroky (reálna produkčná aplikácia)
-(1) **Oprava biznis logiky & bezpečnosti:** 
-Prioritne zapracovať podmienku na minimálny počet položiek v košíku pre prechod do Checkoutu, opraviť fungovanie košíka tak, aby v ňom neostali neviditeľné položky a zabezpečiť, aby sa prihlasovacia stránka nezobrazovala už prihlásenému používateľovi, keď klikne na šípku *späť* v prehliadači.  
-(2) **Optimalizácia výkonu a načítavania:**  
-Optimalizovať čas načítania stránky `/inventory.html`. Počas testovania bola ako orientačná referenčná hodnota použitá doba načítania do 3 sekúnd, pričom pri profile `performance_glitch_user` bol zaznamenaný výrazne dlhší čas načítania.  
-(3) **Oprava perzistencie filtrov:**  
-Zaistiť ukladanie stavu filtra tak, aby filter pretrval aj po obnovení stránky a návrate z detailu produktu.   
-(4) **Doplnenie validácie formulárov:** Zaviesť regex pravidlá na povinné polia (napr. overovanie formátu PSČ, mien a priezvisk).    
+
+**(1) Oprava biznis logiky & bezpečnosti:** Prioritne zapracovať podmienku na minimálny počet položiek v košíku pre prechod do Checkoutu, opraviť fungovanie košíka tak, aby v ňom neostali neviditeľné položky a zabezpečiť, aby sa prihlasovacia stránka nezobrazovala už prihlásenému používateľovi, keď klikne na šípku *späť* v prehliadači.   
+
+**(2) Optimalizácia výkonu a načítavania:** Optimalizovať čas načítania stránky `/inventory.html`. Počas testovania bola ako orientačná referenčná hodnota použitá doba načítania do 3 sekúnd, pričom pri profile `performance_glitch_user` bol zaznamenaný výrazne dlhší čas načítania.  
+
+**(3) Oprava perzistencie filtrov:** Zaistiť ukladanie stavu filtra tak, aby filter pretrval aj po obnovení stránky a návrate z detailu produktu.   
+
+**(4) Doplnenie validácie formulárov:** Zaviesť regex pravidlá na povinné polia (napr. overovanie formátu PSČ, mien a priezvisk).    
 
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/a0b39862-1f8b-4363-b56e-75756c665169" />
