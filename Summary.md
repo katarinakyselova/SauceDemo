@@ -1,6 +1,6 @@
 # Záverečná správa z testovania (Test Summary Report)
 
-**Projekt:** Saucedemo.com (Swag Labs E-commerce Demo Application) 
+**Projekt:** Saucedemo.com (Swag Labs E-commerce Demo Application)   
  **Verzia aplikácie:** N/A  
  **URL:** https://www.saucedemo.com  
  **Autor / Tester:** Katarína Kyselová  
