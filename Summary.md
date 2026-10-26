@@ -8,7 +8,7 @@
 **Testované prostredie:** Windows 11 | MS Edge v152.0 (64-bit), Google Chrome v152.0 (64-bit) | Rozlíšenie 1920x1080 px    
 **Použité nástroje:** Jira (správa úloh a defektov), Canva (vizualizácie), Chrome DevTools (meranie načítania stránky), AI asistent (podpora pri spracovaní dokumentácie a analýze).  
 
-## 1. Úvod a prehľad (Executive Summary)
+## 1. 🔎 Úvod a prehľad (Executive Summary)
 ### 1.1 Účel dokumentu
 Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky  www.saucedemo.com  
 
@@ -37,7 +37,7 @@ Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testero
 * **Prístupnosť (Accessibility):** Testovanie špeciálnych potrieb nebolo súčasťou tohto projektu. 
 * **Responzibilita** pre smartfóny a tablety.  
 
-## 2. Metrika úspešnosti testov (Test Execution Metrics)
+## 2. 🧮 Metrika úspešnosti testov (Test Execution Metrics)
 #### 2.1 Súhrn testovania podľa testovacích prípadov
 **Počet testovacích scenárov:** 10  
 **Počet testovacích prípadov (Test Cases, TC):** 29  
@@ -62,11 +62,11 @@ Najväčšiu severitu mali bugy zistené v moduloch **Nákupný košík a Objedn
 **Celkový počet evidovaných bugov:** 11 (9 bugov vytvorených na základe testovacích prípadov a 2 bugy identifikované počas prieskumného testovania). 
 
 
-## 3. Prehľad nájdených defektov podľa testovacích prípadov
+## 3. 📙 Prehľad nájdených defektov podľa testovacích prípadov
 Počas testovania podľa definovaných testovacích prípadov bolo zaznamenaných 9 defektov, z toho 2 defekty s významnou (Major) severitou. Základný testovaný účet pre bug reporty bol referenčný profil standard_user (na ktorom bolo spustených všetkých 29 TC). Všetky nájdené defekty mali status To Do (Úloha). 
 Nad rámec týchto defektov boli počas dvoch prieskumných testovaní zaznamenané ďalšie 2 špecifické bugy pre doplnkové účty performance_glitch_user a problem_user (pozri nasledujúcu kapitolu 4).
 
-## 4. Prínos prieskumného testovania (Exploratory Testing Value)
+## 4. 📘 Prínos prieskumného testovania (Exploratory Testing Value)
 **Prínosom prieskumného testovania** na začiatku projektu (Prieskumné testovanie I.) bolo definovanie základného toku aplikácie a príprava podkladov pre tvorbu štruktúrovaných testovacích scenárov a prípadov. Pri zvolenom profile performance_glitch_user bolo kľúčovým nálezom citeľné spomalenie načítania stránky.  
 
 Prieskumné testovanie na konci projektu (Prieskumné testovanie II.) odhalilo kritický problém v správaní košíka pri špecifickom doplnkovom profile problem_user.  
@@ -80,7 +80,7 @@ V rámci uvedených sessions boli evidované nasledovné 2 bugy:
 Záverečná fáza prieskumného testovania zaznamenala kriticky závažné správanie košíka, pri ktorom vznikla neviditeľná položka. Táto položka sa dala odstrániť Reset App State (nie je to štandardný používateľský spôsob).
 
 
-## 5. Záver a odporúčania
+## 5. 📝 Záver a odporúčania
 ### 5.1 Celkové zhodnotenie
 **Pre komerčné produkčné nasadenie (Commercial Release):** NO-GO   
 Aplikácia nie je pripravená na produkčné nasadenie z dôvodu prítomnosti závažných defektov v nákupnej logike (možnosť dokončiť objednávku s prázdnym košíkom) a v správe relácií (nechránený návrat na login), ktoré boli zistené pri štandardnom používateľskom účte (standard_user).   
