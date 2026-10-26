@@ -10,6 +10,18 @@
 
 ## 1. Úvod a prehľad (Executive Summary)
 ### 1.1 Účel dokumentu
+Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky  www.saucedemo.com  
+
+Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testerom na učenie a zdokonaľovanie v QA testingu. Základný profil standard_user slúži ako referenčný účet, zatiaľ čo doplnkové profily visual_user, problem_user,error_user,  performance_glitch_user a locked_out_user obsahujú zámerne zapracované špecifické defekty.  
+
+**Cieľom projektu bolo overiť QA postupy v praxi:**  
+* preskúmať aplikáciu
+* pripraviť testovaciu dokumentáciu (testovacie scenáre a prípady)
+* otestovať aplikáciu a evidovať nájdené chyby
+* vypracovať záverečnú správu z testovania  
+
+**Typy a metodika testovania:** manuálne testovanie čiernej skrinky (prieskumné testovanie a testovanie podľa testovacích prípadov; funkcionálne pozitívne a negatívne testy, nefunkcionálne testy zamerané na bezpečnosť, vizuálnu stránku (UI) a rýchlosť načítania stránky (Performance)).
+
 ### 1.2 Rozsah testovania (Test Scope)
 
 ## 2. Metrika úspešnosti testov (Test Execution Metrics)
