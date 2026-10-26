@@ -1,5 +1,13 @@
 # Záverečná správa z testovania (Test Summary Report)
 
+**Projekt:** Saucedemo.com (Swag Labs E-commerce Demo Application)  
+**Verzia aplikácie:** N/A  
+**URL:** https://www.saucedemo.com  
+**Autor / Tester:** Katarína Kyselová  
+**Obdobie testovania:** 18. august 2026 – 27. september 2026  
+**Testované prostredie:** Windows 11 | MS Edge v152.0 (64-bit), Google Chrome v152.0 (64-bit) | Rozlíšenie 1920x1080 px    
+**Použité nástroje:** Jira (správa úloh a defektov), Canva (vizualizácie), Chrome DevTools (meranie načítania stránky), AI asistent (podpora pri spracovaní dokumentácie a analýze).  
+
 ## 1. Úvod a prehľad (Executive Summary)
 ### 1.1 Účel dokumentu
 ### 1.2 Rozsah testovania (Test Scope)
