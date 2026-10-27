@@ -33,7 +33,7 @@ Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testero
 **Out of Scope**
 * **Platobná brána a transakcie:** Aplikácia disponuje iba simulovaným checkoutom bez spracovania reálnych platieb.  
 * **Backend & API testovanie:** Testovanie prebiehalo iba na úrovni používateľského rozhrania.  
-* **Záťažové a výkonnostné testovanie (Load/Stress Testing):** S výnimkou zhodnotenia profilu performance_glitch_user v prieskumnom testovaní neboli vykonávané záťažové testy.  
+* **Záťažové a výkonnostné testovanie (Load/Stress Testing):** S výnimkou zhodnotenia profilu `performance_glitch_user` v prieskumnom testovaní neboli vykonávané záťažové testy.  
 * **Prístupnosť (Accessibility):** Testovanie špeciálnych potrieb nebolo súčasťou tohto projektu. 
 * **Responzibilita** pre smartfóny a tablety.  
 
@@ -123,7 +123,7 @@ SauceDemo je vynikajúcou didaktickou pomôckou na výučbu junior QA testerov:
 
 **(3) Zhoršená používateľská skúsenosť (UX a výkon):** Strata nastaveného filtra pri prechode do detailu produktu alebo pri refreshi (*BUG_Filter_02, BUG_Filter_03*) a zhoršená výkonnostná efektivita načítania katalógu (*BUG_Exploratory_I*) negatívne ovplyvňuje používateľský zážitok.   
 
-**(4) Validácia vstupov:** Chýbajúca validácia formátu údajov v checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries/PSČ, čo by viedlo k nedoručiteľným zásielkam.  
+**(4) Validácia vstupov:** Chýbajúca validácia formátu údajov v checkoute (*BUG_Order_02*) umožňuje odoslanie neplatných adries, čo by viedlo k nedoručiteľným zásielkam.  
 
 
 ### 5.3 Odporúčania pre ďalší vývoj / QA kroky (reálna produkčná aplikácia)
