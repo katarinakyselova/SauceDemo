@@ -10,7 +10,7 @@
 
 ## 1. 🔎 Úvod a prehľad (Executive Summary)
 ### 1.1 Účel dokumentu
-Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky [SauceDemo](www.saucedemo.com)  
+Tento dokument predstavuje záverečnú správu z manuálneho testovania webovej stránky *SauceDemo*.  
 
 Saucedemo.com je simulovaný frontendový e-shop určený začínajúcim testerom na učenie a zdokonaľovanie v QA testingu. Základný profil `standard_user` slúži ako referenčný účet, zatiaľ čo doplnkové profily `visual_user`, `problem_user`, `error_user`,  `performance_glitch_user` a `locked_out_user` obsahujú zámerne zapracované špecifické defekty.  
 
