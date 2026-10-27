@@ -137,7 +137,8 @@ SauceDemo je vynikajúcou didaktickou pomôckou na výučbu junior QA testerov:
 **(4) Doplnenie validácie formulárov:** Zaviesť regex pravidlá na povinné polia (napr. overovanie formátu PSČ, mien a priezvisk).    
 
 
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/a0b39862-1f8b-4363-b56e-75756c665169" />
+<img width="1920" height="1080" alt="Saucedemo com (8)" src="https://github.com/user-attachments/assets/18ffc0c6-e323-4121-a62b-fa3fee649be4" />
+
 
 
 
